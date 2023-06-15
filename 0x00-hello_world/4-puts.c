@@ -2,7 +2,7 @@
 
 /**
 * main - Entry point of the program
-* Description: C program to print "Programming is like building a multilingual puzzle" using the puts function.
+* Description: C program to print "Programming is like building a multilingual puzzle".
 * Author: Mohamed Amine Amazzal
 * Date: 15/6/2023
 */
