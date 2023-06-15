@@ -4,7 +4,7 @@
 * main - Entry point of the program
 *
 * Description: print string in c usin puts folowed by new line .
-* Author: Amine Amazzal
+* Return: the value 0.
 */
 int main(void)
 {
