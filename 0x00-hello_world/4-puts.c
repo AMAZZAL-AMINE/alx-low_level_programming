@@ -2,11 +2,10 @@
 
 /**
 * main - Entry point of the program
-* Description: C program to print "Programming is like building a multilingual puzzle".
-* Author: Mohamed Amine Amazzal
-* Date: 15/6/2023
+*
+* Description: print "Programming is like building a multilingual puzzle".
+* Author: Amine Amazzal
 */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
