@@ -4,7 +4,7 @@
 
 /*
  * main : positive_or_negative.c
- * Description : check the var n is negative or positive
+ * Description - check the var n is negative or positive
  * return : return is 0
  */
 int main(void)
