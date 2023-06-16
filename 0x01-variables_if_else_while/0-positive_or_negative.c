@@ -3,9 +3,10 @@
 #include <time.h>
 
 /*
- * main : positive_or_negative.c
+ * main - positive_or_negative.c
+ *
  * Description - check the var n is negative or positive
- * return : return is 0
+ * Return - return is 0
  */
 int main(void)
 {
