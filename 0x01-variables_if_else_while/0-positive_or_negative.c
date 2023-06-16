@@ -8,7 +8,7 @@
  * This program assigns a random number to the variable `n` each time it is executed.
  * It then prints whether the number stored in `n` is positive, zero, or negative.
  *
- * Return: 0 on successful execution
+ * Return: Always 0 (success)
  */
 int main(void)
 {
