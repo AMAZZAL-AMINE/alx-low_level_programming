@@ -8,7 +8,7 @@
 
 int main() {
 	char	*str;
-	int		count;
+	int	count;
 
 	count = 0;
 	str = "_putchar\n";
