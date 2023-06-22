@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * 0-putchar.c - print _putchar followed by a new line.
@@ -7,13 +7,14 @@
  */
 
 int main() {
-	char *str;
+	char	*str;
+	int		count;
 
+	count = 0;
 	str = "_putchar\n";
-	while (*str)
-	{
-		writes(1, str, 1);
-		str++;
+	while (str[count] != '\0') {
+		putchar(str[count]);
+		count++;
 	}
 	return (0);
 }
