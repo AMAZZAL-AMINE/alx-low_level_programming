@@ -13,7 +13,8 @@ int main(void)
 
 	count = 0;
 	str = "_putchar\n";
-	while (str[count] != '\0') {
+	while (str[count] != '\0')
+	{
 		putchar(str[count]);
 		count++;
 	}
