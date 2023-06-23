@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - 1-alphabet.c
+* print_alphabet - 1-alphabet.c
 * Return: null to return nothing
 */
 
