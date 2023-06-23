@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_times_table - print times table
- * @n: number to check
- * Return: void
+ * main - print sum of multiples of 3 and 5
+ * Return: 0 Success
  */
 
 int main(void)
