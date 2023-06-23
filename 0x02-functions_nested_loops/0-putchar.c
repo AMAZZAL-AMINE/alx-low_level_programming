@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * 0-putchar.c - print _putchar followed by a new line.
+ * main - 0-putchar.c.
  * Description: use write to stdout to print _putchar.
  * Return: 0
  */
