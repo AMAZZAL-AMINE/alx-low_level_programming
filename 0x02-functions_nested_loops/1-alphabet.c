@@ -6,11 +6,11 @@
 * Return: null to return nothing
 */
 
-
 void print_alphabet(void)
 {
-  char count = 'a';
+  char count;
 
+  count = 'a';
 	while (count <= 'z')
 	{
 		putchar(count);
