@@ -2,6 +2,7 @@
 
 /**
  * _islower - 3-islower.c
+ * Description: Check if a character is lowercase
  * Return: 1 if lower case, 0 if not
  */
 
