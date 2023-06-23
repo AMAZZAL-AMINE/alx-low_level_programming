@@ -8,16 +8,16 @@
 
 void print_times_table(int n)
 {
-	int i, dcount, count;
+	int i, j, count;
 
 	if (!(n > 15 || n < 0))
 	{
 		for (i = 0; i <= n; i++)
 		{
-			for (dcount = 0; dcount <= n; dcount++)
+			for (j = 0; j <= n; j++)
 			{
-				count = (i * dcount);
-				if (dcount != 0)
+				count = (i * j);
+				if (j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
