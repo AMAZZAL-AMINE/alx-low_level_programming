@@ -2,7 +2,7 @@
 
 /**
  * _islower - 3-islower.c
- * @c - parameter
+ * @c : is the parameter
  * Return: 1 if lower case, 0 if not
  */
 
