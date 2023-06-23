@@ -2,12 +2,12 @@
 
 /**
 * main - 1-alphabet.c
-* description: prints alphabet
-* Return: 0 success
+* description: Prints the alphabet in lowercase
+* Return: null to return nothing
 */
 
 
-int main(void)
+void print_alphabet(void)
 {
   char count = 'a';
 
@@ -17,5 +17,5 @@ int main(void)
 		count++;
 	}
 	putchar('\n');
-  return (0);
+  return;
 }

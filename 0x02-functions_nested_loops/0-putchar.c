@@ -3,10 +3,10 @@
 /**
  * main - 0-putchar.c.
  * Description: use write to stdout to print _putchar.
- * Return: null; to close function.
+ * Return: 0
  */
 
-void print_alphabet(void)
+int main(void)
 {
 	char	*str;
 	int	count;
@@ -18,5 +18,5 @@ void print_alphabet(void)
 		putchar(str[count]);
 		count++;
 	}
-	return;
+	return (0);
 }
