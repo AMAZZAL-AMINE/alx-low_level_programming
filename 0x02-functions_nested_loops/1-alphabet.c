@@ -2,7 +2,6 @@
 
 /**
 * main - 1-alphabet.c
-* description: Prints the alphabet in lowercase
 * Return: null to return nothing
 */
 
