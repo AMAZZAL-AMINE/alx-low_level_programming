@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * positive_or_negative - prints if integer is positive or negative
+ * Return: void
  */
 
 int main(void)
