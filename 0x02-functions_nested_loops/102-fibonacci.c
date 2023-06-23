@@ -7,17 +7,22 @@
 
 int main(void)
 {
-	int i;
-	long int a = 1, b = 2, c = 0, sum = 2;
+	unsigned long count, i, j, k;
 
-	for (i = 0; i < 30; i++)
+	i = 0;
+	j = 1;
+	count = 0;
+	while (count < 50)
 	{
-		c = a + b;
-		a = b;
-		b = c;
-		if (c % 2 == 0)
-			sum += c;
+		k = i + j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
+		else
+			printf(", ");
+		count++;
 	}
-	printf("%ld\n", sum);
 	return (0);
 }
