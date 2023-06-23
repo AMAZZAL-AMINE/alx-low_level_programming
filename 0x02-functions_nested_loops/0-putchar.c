@@ -6,7 +6,8 @@
  * Return: 0
  */
 
-int main() {
+int main(void)
+{
 	char	*str;
 	int	count;
 
