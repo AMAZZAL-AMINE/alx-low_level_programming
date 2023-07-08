@@ -2,40 +2,53 @@
 #include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to make change for an amount of
- *        money.
- * @argc: number of arguments passed to the function.
- * @argv: array of arguments passed to the function.
+ *cando - checks if a string is a valid integer.
+ *@s: string to check.
  *
- * Return: Always 0.
+ *Return: 1 if string is a valid integer, else 0.
  */
 
-int main(int argc, char *argv[])
+int cando(char *s)
 {
-	int i, n, coins = 0;
-	int cents[] = {25, 10, 5, 2, 1};
+	int i = 0;
 
-	if (argc != 2)
+	while (s[i])
 	{
-		printf("Error\n");
-		return (1);
+		if (!(s[i] >= '0' && s[i] <= '9'))
+			return (0);
+		i++;
 	}
+	return (1);
+}
 
-	n = atoi(argv[1]);
+/**
+ *main - adds positive numbers
+ *@argc: number of arguments passed to the function.
+ *@argv: array of arguments passed to the function.
+ *
+ *Return: 0 if no errors, else 1
+ */
 
-	if (n <= 0)
+int main(int argc, char **argv)
+{
+	int sum = 0;
+	int i = 1;
+
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	for (i = 0; i < 5; i++)
+	while (argv[i])
 	{
-		coins += n / cents[i];
-		n %= cents[i];
+		if (!cando(argv[i]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += atoi(argv[i]);
+		i++;
 	}
-
-	printf("%d\n", coins);
-
+	printf("%d\n", sum);
 	return (0);
 }
