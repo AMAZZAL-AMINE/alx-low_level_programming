@@ -2,34 +2,53 @@
 #include <stdlib.h>
 
 /**
- * main - adds positive numbers.
- * @argc: number of arguments passed to the function.
- * @argv: array of arguments passed to the function.
+ *is_valid_int - checks if a string is a valid integer.
+ *@s: string to check.
  *
- * Return: Always 0.
+ *Return: 1 if string is a valid integer, else 0.
  */
 
-int main(int argc, char *argv[])
+int cando(char *s)
 {
-	int i, sum = 0;
+	int i = 0;
 
-	if (argc < 2)
+	while (s[i])
+	{
+		if (!(s[i] >= '0' && s[i] <= '9'))
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+/**
+ *main - adds positive numbers
+ *@argc: number of arguments passed to the function.
+ *@argv: array of arguments passed to the function.
+ *
+ *Return: 0 if no errors, else 1
+ */
+
+int main(int argc, char **argv)
+{
+	int sum = 0;
+	int i = 1;
+
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	for (i = 1; i < argc; i++)
+	while (argv[i])
 	{
-		if (*argv[i] < '0' || *argv[i] > '9')
+		if (cando(argv[i]) == 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
 		sum += atoi(argv[i]);
+		i++;
 	}
-
 	printf("%d\n", sum);
-
 	return (0);
 }
