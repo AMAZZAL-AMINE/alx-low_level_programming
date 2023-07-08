@@ -2,52 +2,41 @@
 #include <stdlib.h>
 
 /**
- *cando - checks if a string is a valid integer.
- *@s: string to check.
+ * main - prints the minimum number of coins to make change for an amount of
+ * money.
+ * @argc: number of arguments passed to the function.
+ * @argv: array of arguments passed to the function.
  *
- *Return: 1 if string is a valid integer, else 0.
- */
-
-int cando(char *s)
-{
-	int i = 0;
-
-	while (s[i])
-	{
-		if (!(s[i] >= '0' && s[i] <= '9'))
-			return (0);
-		i++;
-	}
-	return (1);
-}
-
-/**
- *main - adds positive numbers
- *@argc: number of arguments passed to the function.
- *@argv: array of arguments passed to the function.
- *
- *Return: 0 if no errors, else 1
+ * Return: 0 if no errors, else 1
  */
 
 int main(int argc, char **argv)
 {
-	int sum = 0;
-	int i = 1;
+	int i, sum = 0;
 
-	if (argc == 1)
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	if (_atoi(argv[1]) < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	while (argv[i])
+	for (i = 0; _atoi(argv[1]) > 0; i++)
 	{
-		if (!cando(argv[i]))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		sum += atoi(argv[i]);
-		i++;
+		if (_atoi(argv[1]) >= 25)
+			_atoi(argv[1]) -= 25;
+		else if (_atoi(argv[1]) >= 10)
+			_atoi(argv[1]) -= 10;
+		else if (_atoi(argv[1]) >= 5)
+			_atoi(argv[1]) -= 5;
+		else if (_atoi(argv[1]) >= 2)
+			_atoi(argv[1]) -= 2;
+		else
+			_atoi(argv[1]) -= 1;
+		sum++;
 	}
 	printf("%d\n", sum);
 	return (0);
