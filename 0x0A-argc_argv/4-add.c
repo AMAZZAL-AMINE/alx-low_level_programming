@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *is_valid_int - checks if a string is a valid integer.
+ *cando - checks if a string is a valid integer.
  *@s: string to check.
  *
  *Return: 1 if string is a valid integer, else 0.
@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 	}
 	while (argv[i])
 	{
-		if (cando(argv[i]) == 0)
+		if (!cando(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
