@@ -11,28 +11,27 @@
 
 int main(int argc, char *argv[])
 {
-	int i, n;
+  int i, bytes;
+  char *main_ptr;
 
-
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	n = atoi(argv[1]);
-	if (n < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
-
-	for (i = 0; i < n; i++)
-	{
-		printf("%02hhx", *((char *)main + i));
-		if (i < n - 1)
-			printf(" ");
-		else
-			printf("\n");
-	}
-	return (0);
+  if (argc != 2)
+  {
+    printf("Error\n");
+    exit(1);
+  }
+  bytes = atoi(argv[1]);
+  if (bytes < 0)
+  {
+    printf("Error\n");
+    exit(2);
+  }
+  main_ptr = (char *)main;
+  for (i = 0; i < bytes; i++)
+  {
+    printf("%02hhx", main_ptr[i]);
+    if (i < bytes - 1)
+      printf(" ");
+  }
+  printf("\n");
+  return (0);
 }
