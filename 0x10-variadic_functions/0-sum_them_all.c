@@ -2,23 +2,23 @@
 
 /**
  *sum_them_all - calculates the sum of all parameters
- *@n: 	number of arguments
+ *@n: number of arguments
  *@...: infinite arguments
- *Return:  sum of parameters
+ *Return:  sum of all parameters
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list list;
+	va_list ap;
 	unsigned int i = 0;
 	int sum = 0;
 
-	va_start(list, n);
+	va_start(ap, n);
 	while (i < n)
 	{
-		sum += va_arg(list, int);
+		sum += va_arg(ap, int);
 		i++;
 	}
-	va_end(list);
+	va_end(ap);
 	return (sum);
 }
